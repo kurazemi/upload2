@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}ファイルアップロード{% endblock %}
+{% block content %}
+<form method="POST" action="/upload" enctype="multipart/form-data" name="file_form">
+	<input type="file" name="file" size="40" style="width:40em">
+	<input type="submit" id="file_up">
+</form>
+<script>
+		document.getElementById("file_up").addEventListener("click", function () {
+		input_check();
+		});
+</script>
+{% endblock %}

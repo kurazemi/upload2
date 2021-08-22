@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}完了{% endblock %}
+{% block content %}
+<font color="red"><p> ファイルアップロードにウィルスが検出されました。</p></font>
+<p> アップロードファイルをご確認ください。
+<form method="GET" action="/testback">
+<button type="submit" >戻る</button>
+</form>
+{% endblock %}
